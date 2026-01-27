@@ -355,7 +355,7 @@ odd
 ### Task 4 (1 point): Sum a list
 
 Implement a Python script named `sum_csv.py` that reads a filename from the command line, reads a CSV file containing a
-single line of comma-separated numbers, and prints the sum of the numbers.
+single line of comma-separated numbers, and prints the sum of the numbers. Report your sum as an integer, perhaps using the `int()` function to do so.
 
 You to debug your code, you should create a CSV file named `prob4-data-debug.csv` in your repository to test your code.
 This file should contain a single line of comma-separated values, for example:
