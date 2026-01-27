@@ -78,7 +78,7 @@ jobs:
       uses: classroom-resources/autograding-io-grader@v1
       with:
         test-name: 'Test 4: Sum a list'
-        setup-command: printf "1,2,3,4\n" > hidden.csv
+        setup-command: pip install numpy; printf "1,2,3,4\n" > hidden.csv
         command: python sum_csv.py hidden.csv
         input: ''
         expected-output: '10'
