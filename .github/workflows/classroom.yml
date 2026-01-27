@@ -68,7 +68,7 @@ jobs:
         test-name: 'Task 5: CSV shape (debug)'
         setup-command: pip install numpy; bash -lc 'printf "1,2,3\n4,5,6\n7,8,9\n10,11,12\n"
           >prob5-data-test-260205.csv'
-        command: python csv_shape.py prob-5-data-test-260205.csv
+        command: python csv_shape.py prob5-data-test-260205.csv
         input: ''
         expected-output: 4 3
         comparison-method: exact
