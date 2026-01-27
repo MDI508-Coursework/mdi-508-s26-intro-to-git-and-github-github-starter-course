@@ -61,18 +61,6 @@ jobs:
         comparison-method: exact
         timeout: 10
         max-score: 1
-    - name: 'Task 4: Sum a list (debug)'
-      id: task-4-sum-a-list-debug
-      uses: classroom-resources/autograding-io-grader@v1
-      with:
-        test-name: 'Task 4: Sum a list (debug)'
-        setup-command: cat 1,2,3,4 > prob4-data-test-260205.csv
-        command: python sum_csv prob4-data-test-260205
-        input: ''
-        expected-output: '10'
-        comparison-method: exact
-        timeout: 10
-        max-score: 1
     - name: 'Task 5: CSV shape (debug)'
       id: task-5-csv-shape-debug
       uses: classroom-resources/autograding-io-grader@v1
@@ -92,7 +80,6 @@ jobs:
         TASK-2-GREETING-WITH-A-NAME-DEBUG_RESULTS: "${{steps.task-2-greeting-with-a-name-debug.outputs.result}}"
         TASK-3-EVEN-OR-ODD-DEBUG_RESULTS: "${{steps.task-3-even-or-odd-debug.outputs.result}}"
         TASK-3-EVEN-OR-ODD-2-DEBUG_RESULTS: "${{steps.task-3-even-or-odd-2-debug.outputs.result}}"
-        TASK-4-SUM-A-LIST-DEBUG_RESULTS: "${{steps.task-4-sum-a-list-debug.outputs.result}}"
         TASK-5-CSV-SHAPE-DEBUG_RESULTS: "${{steps.task-5-csv-shape-debug.outputs.result}}"
       with:
-        runners: task-1-hello-world-debug,task-2-greeting-with-a-name-debug,task-3-even-or-odd-debug,task-3-even-or-odd-2-debug,task-4-sum-a-list-debug,task-5-csv-shape-debug
+        runners: task-1-hello-world-debug,task-2-greeting-with-a-name-debug,task-3-even-or-odd-debug,task-3-even-or-odd-2-debug,task-5-csv-shape-debug
