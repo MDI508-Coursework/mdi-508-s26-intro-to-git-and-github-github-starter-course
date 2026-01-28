@@ -55,7 +55,7 @@ skip this step. Otherwise, go to <https://www.github.com> to create a new accoun
 Remain logged into GitHub in your browser for the rest of this assignment. Once logged in, you can click on the
 following GitHub Classroom Homework 0 assignment link:
 
-   <https://classroom.github.com/a/0maOzv5Aq>
+   <https://classroom.github.com/a/0maOzv5q>
 
 (*Note that, for future assignments, the GitHub Classroom assignment link will be posted on the course website.*)
 
